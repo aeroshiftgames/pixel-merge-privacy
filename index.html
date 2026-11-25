@@ -36,7 +36,7 @@
 <body>
 
 <h1>Pixel Merge — Gizlilik Politikası</h1>
-<div class="meta">Son güncelleme: 13 Kasım 2026 · Geliştirici: AeroShiftGames · Uygulama: <code>com.aeroshiftgames.merge</code></div>
+<div class="meta">Son güncelleme: 25 Kasım 2026 · Geliştirici: AeroShiftGames · Uygulama: <code>com.aeroshiftgames.merge</code></div>
 
 <p>Bu politika, <strong>Pixel Merge — Bit Evrimi</strong> mobil oyununun hangi verileri işlediğini açıklar. Oyunu kullanarak bu politikada anlatılanları kabul etmiş olursunuz.</p>
 
@@ -44,7 +44,7 @@
 <ul>
   <li>Sizden <strong>ad, e-posta, telefon numarası gibi kişisel bilgiler istemiyoruz.</strong> Oyunda hesap açma yok.</li>
   <li>Oyun ilerlemeniz (skor, altın, açtığınız temalar) <strong>cihazınızda</strong> saklanır ve bize gönderilmez. Google Play Games'e bağlıysanız ilerlemenizin bir yedeği <strong>Google hesabınızdaki bulut kaydında</strong> da tutulur.</li>
-  <li><strong>Bizim sunucumuz yok.</strong> Oyun verilerini toplayan, saklayan bir altyapımız bulunmuyor.</li>
+  <li><strong>Kendi sunucumuz yok.</strong> Oyunu geliştirmek ve hataları düzeltmek için Google'ın <strong>Firebase</strong> hizmetleriyle (Google Analytics, Crashlytics) <strong>anonim kullanım istatistikleri ve çökme raporları</strong> toplanır; bunlar adınız, e-postanız veya reklam kimliğinizle ilişkilendirilmez.</li>
   <li>Reklamlar <strong>Unity LevelPlay</strong> reklam aracılık platformu üzerinden <strong>ironSource</strong>, <strong>Unity Ads</strong>, <strong>Liftoff Monetize</strong> ve <strong>InMobi</strong> ağlarından gelir; satın almalar için <strong>Google Play</strong> kullanılır. Bu servisler kendi verilerini toplar.</li>
   <li>Kişiselleştirilmiş reklam için <strong>açık rızanız alınır</strong> ve bu rızayı istediğiniz zaman geri çekebilirsiniz.</li>
 </ul>
@@ -79,6 +79,16 @@
     <td>Ödemenin gerçekleştirilmesi ve ürünün teslimi</td>
   </tr>
   <tr>
+    <td>Uygulama kullanımı: açılan ekranlar, oyun başlangıç/bitişleri (mod, skor, ulaşılan canavar), keşifler ve başarımlar, ödüllü reklam ve satın alma sonuçları; rastgele uygulama örneği kimliği, cihaz modeli, işletim sistemi, dil, ülke</td>
+    <td>Google (Firebase / Google Analytics)</td>
+    <td>Oyunun nasıl oynandığını ölçmek, oyun dengesini ve ekonomisini iyileştirmek</td>
+  </tr>
+  <tr>
+    <td>Çökme ve hata raporları: hata kaydı, cihaz modeli, işletim sistemi, bellek durumu, hata anındaki ekran ve oyun modu, Crashlytics kurulum kimliği</td>
+    <td>Google (Firebase Crashlytics)</td>
+    <td>Çökmeleri ve hataları bulup düzeltmek</td>
+  </tr>
+  <tr>
     <td>Oyun ilerlemesi (skor, altın, güçlendiriciler, ayarlar, reklam tercihi)</td>
     <td>Cihazınız</td>
     <td>Kaldığınız yerden devam edebilmeniz</td>
@@ -101,6 +111,15 @@
 
 <p><strong>Ödeme bilgilerinizi görmüyoruz.</strong> Kart numaranız ve fatura bilgileriniz doğrudan Google tarafından işlenir. Uygulamaya Google'dan yalnızca satın almanın tamamlandığı bilgisi ve o işleme ait <strong>satın alma kodu (purchase token)</strong> ulaşır. Bu kod <strong>cihazınızda yerel olarak saklanır</strong>; amacı aynı satın almanın yanlışlıkla iki kez ödüllendirilmesini önlemektir. Bize ya da başka bir sunucuya gönderilmez, uygulamayı kaldırdığınızda diğer oyun verileriyle birlikte silinir.</p>
 
+<h2>Kullanım istatistikleri ve çökme raporları (Firebase)</h2>
+<p>Oyun, Google'ın <strong>Firebase</strong> platformundaki iki hizmeti kullanır:</p>
+<ul>
+  <li><strong>Google Analytics for Firebase:</strong> hangi ekranların açıldığı, oyunların hangi modda başlayıp nasıl bittiği (skor, ulaşılan canavar, kazanılan altın), yeni canavar keşifleri, başarımlar, ödüllü reklamların ve satın almaların sonucu gibi <strong>oyun içi olayları</strong> kaydeder. Bu bilgiler size özel olmayan, rastgele oluşturulmuş bir <strong>uygulama örneği kimliğiyle</strong> ilişkilendirilir. Bu verileri oyunun dengesini, zorluğunu ve ekonomisini iyileştirmek için toplu istatistikler hâlinde inceleriz.</li>
+  <li><strong>Firebase Crashlytics:</strong> oyun çöktüğünde ya da bir hata oluştuğunda hata kaydını, cihaz modelini, işletim sistemi sürümünü, bellek durumunu ve hatanın oluştuğu ekran ile oyun modunu Google'a gönderir. Bu raporları yalnızca hataları bulup düzeltmek için kullanırız.</li>
+</ul>
+<p>Firebase <strong>reklam kimliğinizi toplamaz</strong> (bu özellik kapatılmıştır); adınız, e-postanız gibi bilgiler gönderilmez. Firebase'in reklamla ilgili veri kullanımı (reklam depolama, reklam kişiselleştirme) yalnızca kişiselleştirilmiş reklama izin verdiyseniz açılır; izin vermediyseniz kapalı kalır. Kullanım istatistikleri ve çökme raporları, oyunu sürdürmek ve hatalarını gidermek için meşru menfaat kapsamında işlenir.</p>
+<p>Google Analytics verileri en fazla 14 ay, Crashlytics çökme raporları 90 gün saklanır. Uygulama örneği kimliği, uygulamanın verilerini temizlediğinizde ya da uygulamayı kaldırdığınızda sıfırlanır. Google'ın veri uygulamaları: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a> ve <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
 <h2>Reklamlar ve rıza</h2>
 <p>Oyun, reklamları Unity Technologies'in <strong>Unity LevelPlay</strong> reklam aracılık (mediation) platformu üzerinden gösterir. LevelPlay her reklam gösterimi için reklamı bağlı ağlar arasından seçer: <strong>ironSource</strong> ve <strong>Unity Ads</strong> (Unity Technologies), <strong>Liftoff Monetize</strong> (Liftoff Mobile, Inc., eski adıyla Vungle) ve <strong>InMobi</strong>. Oyunda ödüllü reklamlar (isteğe bağlı), oyunlar arasında tam ekran reklamlar ve menü ekranlarının altında banner reklamlar bulunur; oyun oynanırken banner gösterilmez.</p>
 <p>Reklam içeriğini genel kitleye uygun tutmak için ağların sunduğu kısıtlamaları kullanıyoruz: Unity Ads'te 9+ ve üzeri yaş dereceli reklamlar kapalıdır ve kaldıraçlı yatırım (forex), kripto para ve bahis reklamverenleri engellenmiştir; InMobi'de kumar, alkol ve siyasi reklamlar engellenmiştir.</p>
@@ -122,7 +141,7 @@
 <p>Satın almalarda devreye giren Google Play Faturalandırma için: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
 
 <h2>Verilerin yurt dışına aktarılması</h2>
-<p>Bizim sunucumuz olmadığı için verilerinizi biz bir yere aktarmıyoruz. Ancak yukarıdaki tabloda listelenen verileri işleyen <strong>Unity Technologies</strong>, <strong>Liftoff Mobile</strong>, <strong>InMobi</strong> ve <strong>Google</strong> merkezleri Türkiye dışında bulunan şirketlerdir; bu veriler ilgili şirketlerin başta <strong>Amerika Birleşik Devletleri</strong>, <strong>Avrupa Birliği</strong> ülkeleri ve <strong>Asya-Pasifik</strong> bölgesi olmak üzere yurt dışındaki sunucularında işlenir ve saklanır.</p>
+<p>Kendi sunucumuz olmadığı için verilerinizi biz bir yere aktarmıyoruz; kullanım istatistikleri ve çökme raporları da doğrudan Google'ın (Firebase) sunucularına gider. Yukarıdaki tabloda listelenen verileri işleyen <strong>Unity Technologies</strong>, <strong>Liftoff Mobile</strong>, <strong>InMobi</strong> ve <strong>Google</strong> merkezleri Türkiye dışında bulunan şirketlerdir; bu veriler ilgili şirketlerin başta <strong>Amerika Birleşik Devletleri</strong>, <strong>Avrupa Birliği</strong> ülkeleri ve <strong>Asya-Pasifik</strong> bölgesi olmak üzere yurt dışındaki sunucularında işlenir ve saklanır.</p>
 <p>Kişiselleştirilmiş reklam için verdiğiniz <strong>açık rıza</strong>, reklam kimliğinizin bu şekilde yurt dışına aktarılmasını da kapsar. Rızanızı vermediğinizde ya da geri çektiğinizde reklamlar kişiselleştirilmeden gösterilir. Reklamın hiç gösterilememesi teknik olarak mümkün olmadığından, reklam ağlarının sahtecilik önleme ve gösterim ölçümü için işlediği asgari veri (IP adresi ve cihaz bilgisi) meşru menfaat kapsamında işlenmeye devam eder.</p>
 <p>Bu aktarımların ayrıntıları ve alınan güvenlik önlemleri için ilgili şirketlerin yukarıda bağlantısı verilen politikalarına bakabilirsiniz.</p>
 
@@ -135,7 +154,7 @@
   <li>Oyun içinde <em>Ayarlar → Tüm Kayıtları Sil</em></li>
   <li>Android'de <em>Ayarlar → Uygulamalar → Pixel Merge → Depolama → Verileri temizle</em></li>
 </ul>
-<p>Uygulamayı kaldırdığınızda cihazınızdaki tüm oyun verisi silinir. Reklam ortakları ve Google tarafından tutulan veriler için ilgili şirketlerin kendi politikaları geçerlidir.</p>
+<p>Uygulamayı kaldırdığınızda cihazınızdaki tüm oyun verisi silinir. Firebase'deki kullanım istatistikleri ve çökme raporları yukarıda belirtilen sürelerin sonunda otomatik olarak silinir; daha önce silinmesini isterseniz aşağıdaki adresten bize yazabilirsiniz. Reklam ortakları ve Google tarafından tutulan diğer veriler için ilgili şirketlerin kendi politikaları geçerlidir.</p>
 
 <h2>Haklarınız</h2>
 <p>Bulunduğunuz ülkenin mevzuatına (KVKK, GDPR vb.) göre; işlenen verilerinize erişme, düzeltilmesini veya silinmesini isteme, işlemeye itiraz etme ve rızanızı geri çekme haklarına sahipsiniz. Rızanızı oyun içindeki ayardan doğrudan geri çekebilirsiniz. Diğer talepler için bize ulaşabilir, reklam ağları tarafından tutulan veriler için doğrudan Unity, Liftoff veya InMobi'ye de başvurabilirsiniz.</p>
@@ -149,7 +168,7 @@
 <hr>
 
 <h1>Pixel Merge — Privacy Policy</h1>
-<div class="meta">Last updated: 13 November 2026 · Developer: AeroShiftGames · App: <code>com.aeroshiftgames.merge</code></div>
+<div class="meta">Last updated: 25 November 2026 · Developer: AeroShiftGames · App: <code>com.aeroshiftgames.merge</code></div>
 
 <p>This policy explains what data <strong>Pixel Merge</strong> processes.</p>
 
@@ -157,7 +176,7 @@
 <ul>
   <li>We do <strong>not</strong> ask for your name, email, or phone number. There are no accounts.</li>
   <li>Your game progress is stored <strong>on your device</strong> and is never sent to us. If you are signed in to Google Play Games, a backup of your progress is also kept in <strong>your Google account's cloud save</strong>.</li>
-  <li>We operate <strong>no servers</strong> and collect no gameplay data ourselves.</li>
+  <li>We operate <strong>no servers</strong> of our own. To improve the game and fix bugs, <strong>anonymous usage statistics and crash reports</strong> are collected through Google's <strong>Firebase</strong> services (Google Analytics, Crashlytics); they are not linked to your name, email or advertising ID.</li>
   <li>Ads are served through the <strong>Unity LevelPlay</strong> mediation platform from <strong>ironSource</strong>, <strong>Unity Ads</strong>, <strong>Liftoff Monetize</strong> and <strong>InMobi</strong>; purchases are handled by <strong>Google Play Billing</strong>.</li>
   <li>We ask for your <strong>explicit consent</strong> before personalized advertising, and you can withdraw it at any time.</li>
 </ul>
@@ -170,6 +189,8 @@
   <tr><td>IP address</td><td>Unity Technologies, Liftoff Mobile, InMobi</td><td>Coarse (country-level) location, fraud prevention</td></tr>
   <tr><td>Ad interaction (impression, click, completion)</td><td>Unity Technologies, Liftoff Mobile, InMobi</td><td>Ad performance and rewarded-ad verification</td></tr>
   <tr><td>Purchase and receipt data</td><td>Google (Play Billing)</td><td>Processing payment and delivering the product</td></tr>
+  <tr><td>App usage: screens opened, game starts/ends (mode, score, creature reached), discoveries and achievements, rewarded-ad and purchase results; random app instance ID, device model, OS, language, country</td><td>Google (Firebase / Google Analytics)</td><td>Measuring how the game is played, improving game balance and economy</td></tr>
+  <tr><td>Crash and error reports: error log, device model, OS, memory state, the screen and game mode at the time, Crashlytics installation ID</td><td>Google (Firebase Crashlytics)</td><td>Finding and fixing crashes and bugs</td></tr>
   <tr><td>Game progress (score, coins, power-ups, settings, ad preference)</td><td>Your device</td><td>Resuming your game</td></tr>
   <tr><td>Google Play Games player ID and name, achievements, leaderboard scores, cloud save (a copy of your game progress)</td><td>Google (Google Play Games Services)</td><td>Achievements, leaderboards and moving progress between devices</td></tr>
 </table>
@@ -184,6 +205,15 @@
 <p>The game itself does not request location permission; the ad networks only use coarse (country-level) location derived from the IP address.</p>
 
 <p>We never see your payment details. Card and billing information is handled directly by Google. All the app receives from Google is confirmation that a purchase completed, together with the <strong>purchase token</strong> for that transaction. That token is <strong>stored locally on your device</strong> to prevent the same purchase from being rewarded twice. It is not sent to us or to any server, and it is deleted along with your other game data when you uninstall the app.</p>
+
+<h2>Usage statistics and crash reports (Firebase)</h2>
+<p>The game uses two services of Google's <strong>Firebase</strong> platform:</p>
+<ul>
+  <li><strong>Google Analytics for Firebase</strong> records <strong>in-game events</strong> such as which screens are opened, which mode a game starts in and how it ends (score, creature reached, coins earned), new creature discoveries, achievements, and the outcome of rewarded ads and purchases. These are linked to a randomly generated <strong>app instance ID</strong> that does not identify you. We look at this data as aggregate statistics to improve the game's balance, difficulty and economy.</li>
+  <li><strong>Firebase Crashlytics</strong> sends Google the error log, device model, OS version, memory state, and the screen and game mode at the time when the game crashes or an error occurs. We use these reports only to find and fix bugs.</li>
+</ul>
+<p>Firebase <strong>does not collect your advertising ID</strong> (this feature is turned off), and no name, email or similar information is sent. Firebase's ad-related data use (ad storage, ad personalization) is only enabled if you allowed personalized ads, and stays off otherwise. Usage statistics and crash reports are processed on a legitimate-interest basis to keep the game running and fix its bugs.</p>
+<p>Google Analytics data is kept for up to 14 months and Crashlytics crash reports for 90 days. The app instance ID resets when you clear the app's data or uninstall it. Google's data practices: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
 
 <h2>Ads and consent</h2>
 <p>The game shows ads through Unity Technologies' <strong>Unity LevelPlay</strong> mediation platform, which picks each ad from the connected networks: <strong>ironSource</strong> and <strong>Unity Ads</strong> (Unity Technologies), <strong>Liftoff Monetize</strong> (Liftoff Mobile, Inc., formerly Vungle) and <strong>InMobi</strong>. The game has optional rewarded ads, full-screen ads between games, and banner ads at the bottom of menu screens; no banner is shown during gameplay.</p>
@@ -205,7 +235,7 @@
 <p>Google Play Billing, which handles purchases: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
 
 <h2>International transfers</h2>
-<p>We hold no servers of our own, so we transfer nothing ourselves. However, <strong>Unity Technologies</strong>, <strong>Liftoff Mobile</strong>, <strong>InMobi</strong> and <strong>Google</strong> — the companies that process the data listed in the table above — are based outside Turkey, and that data is processed and stored on their servers abroad, primarily in the <strong>United States</strong>, <strong>European Union</strong> countries and the <strong>Asia-Pacific</strong> region.</p>
+<p>We hold no servers of our own, so we transfer nothing ourselves; usage statistics and crash reports go directly to Google's (Firebase) servers. In addition, <strong>Unity Technologies</strong>, <strong>Liftoff Mobile</strong>, <strong>InMobi</strong> and <strong>Google</strong> — the companies that process the data listed in the table above — are based outside Turkey, and that data is processed and stored on their servers abroad, primarily in the <strong>United States</strong>, <strong>European Union</strong> countries and the <strong>Asia-Pacific</strong> region.</p>
 <p>The <strong>explicit consent</strong> you give for personalized advertising also covers this transfer of your advertising ID abroad. If you decline or withdraw consent, ads are shown non-personalized; because serving no ad at all is not technically possible, the minimum data the ad networks need for fraud prevention and impression measurement (IP address and device information) continues to be processed on a legitimate-interest basis.</p>
 <p>For details of these transfers and the safeguards applied, see the policies linked above.</p>
 
@@ -213,7 +243,7 @@
 <p>This game is intended for users aged <strong>13 and over</strong>. We do not knowingly collect data from children under 13.</p>
 
 <h2>Data retention and deletion</h2>
-<p>Game progress and your ad preference live on your device. Clear them in-game via <em>Settings → Delete All Data</em> (this also resets your Google Play Games cloud save), or via <em>Android Settings → Apps → Pixel Merge → Storage → Clear data</em>. Uninstalling the app removes all local game data.</p>
+<p>Game progress and your ad preference live on your device. Clear them in-game via <em>Settings → Delete All Data</em> (this also resets your Google Play Games cloud save), or via <em>Android Settings → Apps → Pixel Merge → Storage → Clear data</em>. Uninstalling the app removes all local game data. Usage statistics and crash reports in Firebase are deleted automatically at the end of the periods above; if you want them deleted sooner, contact us at the address below.</p>
 
 <h2>Your rights</h2>
 <p>Depending on your jurisdiction (GDPR, KVKK, and similar), you may have the right to access, correct, or delete your data, object to processing, and withdraw consent. You can withdraw advertising consent directly in the game's settings. For other requests contact us, or contact Unity, Liftoff or InMobi directly regarding data held by the ad networks.</p>
